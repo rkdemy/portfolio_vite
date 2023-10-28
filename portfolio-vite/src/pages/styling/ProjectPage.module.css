@@ -1,0 +1,24 @@
+.container {
+  margin-top: 80px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Migra";
+  font-weight: 200;
+  font-size: 4.5vw;
+  color: var(--hero-name);
+}
+
+.header_text_container {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.header_text {
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.3vw;
+  color: var(--hero-name);
+}

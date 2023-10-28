@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "OTFGlusp";
+  src: url("./OTFGlusp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Redaction 50 Regular */
+@font-face {
+  font-family: "Redaction 50";
+  src: url("./Redaction50-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "MigraBold";
+  src: url("./Migra-Extrabold.otf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url("./DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root,
+html[data-theme="light"] {
+  --hero-name: #141414;
+  /* --page-bg: #fffbeb; */
+  --page-bg: #ffffff;
+  --nav-numbers: #f42144;
+  --section-bg: white;
+  --contact-text: #141414;
+  --about-text: black;
+  --about-title: #45193b;
+  --port-text: black;
+  --hero-intro: #2f1664;
+  --line: solid #2f1664;
+  --image-filter: grayscale(0%);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html[data-theme="dark"] {
+  --hero-name: #aeaeae;
+  --page-bg: #171717;
+  --nav-numbers: #818cf8;
+  --section-bg: #121212;
+  --contact-text: rgb(213, 213, 213);
+  --about-text: #f7f7f7;
+  --about-title: #f7f7f7f0;
+  --port-text: rgb(213, 213, 213);
+  --hero-intro: #818cf8;
+  --line: solid #c7d2fe;
+  --image-filter: grayscale(90%);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--page-bg);
+}
