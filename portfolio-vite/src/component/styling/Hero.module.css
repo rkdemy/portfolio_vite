@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "OTFGlusp";
-  src: url("../OTFGlusp.ttf") format("typeface");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .hero_container {
   width: 100%;
   display: flex;
@@ -82,7 +75,7 @@
 }
 
 .hero_links a {
-  font-family: "Migra", "IBM Plex Mono", "Inter";
+  font-family: "Zilla", "IBM Plex Mono", "Inter";
   text-decoration: none;
   color: var(--hero-name);
   position: relative;

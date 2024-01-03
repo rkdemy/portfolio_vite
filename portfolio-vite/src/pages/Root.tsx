@@ -1,10 +1,13 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../component/Navbar";
 
 const Root = () => {
   return (
-    <div>
+    <div
+      style={{
+        overflowX: "hidden",
+      }}
+    >
       <Navbar />
       <main>
         <Outlet />

@@ -1,6 +1,6 @@
 .contact {
   overflow: hidden;
-  font-family: "Migra";
+  font-family: "Outfit";
   color: var(--hero-name);
 }
 
@@ -29,8 +29,8 @@
   margin: 2rem auto;
   font-size: 100px;
   font-family: "OTFGlusp";
-  border-top: 1px solid var(--hero-name);
-  border-bottom: 1px solid var(--hero-name);
+  border-top: 1px solid var(--border-colour);
+  border-bottom: 1px solid var(--border-colour);
   transition: all 0.3s linear;
   cursor: pointer;
 }
@@ -55,15 +55,15 @@ button {
   cursor: pointer;
   font-weight: bold;
   color: var(--hero-name);
-  font-family: "Migra";
+  font-family: "Zilla";
   font-weight: 400;
   margin: 1.5rem 0.5rem;
   border-radius: 2rem;
-  width: 80px;
+  width: 95px;
   height: 30px;
   border: none;
   background-color: transparent;
-  border: 1px solid var(--hero-name);
+  border: 2px solid var(--border-colour);
   display: flex;
   justify-content: center;
   align-items: center;

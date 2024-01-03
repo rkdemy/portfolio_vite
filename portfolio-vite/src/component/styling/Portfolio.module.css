@@ -19,92 +19,66 @@
   list-style: none;
 }
 
-.image {
-  object-fit: cover;
-  position: absolute;
-  left: 50%;
-  max-width: 200px;
-  z-index: 100;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-
-  scale: 2;
+.button_site {
+  display: flex;
 }
 
-.chasespace_image {
-  /* object-fit: cover; */
-  position: absolute;
-  left: 50%;
-  max-width: 160px;
-  z-index: 100;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+.button_site button {
+  background-color: var(--border-colour);
+  border: none;
+  padding: 1rem 1rem;
+  width: fit-content;
+  border-radius: 100px;
+  transition: all 0.2s linear;
+  margin: 0 1rem 0 0;
+}
 
-  scale: 2;
+.button_site a {
+  color: var(--hero-name);
+  text-decoration: none;
+}
+
+.button_site button:hover,
+a {
+  text-decoration: underline;
 }
 
 .section li {
-  border-top: 1px solid var(--hero-name);
-}
-
-.first_project,
-.second_project,
-.last_project {
-  padding: 1rem 1rem;
-}
-
-.first_project h3 {
-  font-family: "DMSans-Regular";
-  font-weight: 400;
-}
-
-.last_project h3 {
-  font-family: "Redaction 50";
-  font-weight: 100;
-}
-
-.last_project {
-  border-bottom: 1px solid var(--hero-name);
-}
-
-.section a {
-  color: var(--hero-name);
+  border-top: 2px solid var(--border-colour);
   text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-.section a > p {
-  transition: opacity 0.2s ease;
-  font-family: "Migra";
-  font-size: 1vw;
-  opacity: 0;
-  margin-right: 1rem;
+.section a {
+  font-family: "Zilla";
+  font-size: 24px;
+}
+
+.section h3 {
+  transition: all 0.2s linear;
+  font-family: "Outfit";
+  font-size: 3.4vw;
+  line-height: 60px;
   color: var(--hero-name);
 }
 
-.section li a:hover .image,
-.section li a:hover .chasespace_image {
-  opacity: 1;
+.section p {
+  max-width: 550px;
+  font-size: 24px;
+  font-family: "Zilla";
+  margin: 2rem 0;
 }
 
-.section li a:hover p {
-  opacity: 1;
-}
-
-.project_container {
-  display: flex;
-  align-items: center;
+.last_project {
+  border-bottom: 2px solid var(--border-colour);
 }
 
 .section h4 {
   display: flex;
   justify-content: center;
-  font-weight: 400;
-  font-family: "Migra";
+  font-family: "Outfit";
   padding-top: 10rem;
 }
 
@@ -119,89 +93,128 @@
   font-weight: bold;
 }
 
-.section span {
-  font-size: 1vw;
-  font-family: "Migra";
-  font-weight: 400;
-}
-
-.section h3 {
-  transition: all 0.2s linear;
-  cursor: pointer;
-  font-size: 3.4vw;
-  color: var(--hero-name);
-}
-
-.section li a:hover .tech_container {
-  opacity: 0;
-}
-
-.tech_container {
-  transition: all 0.2s ease;
+.right_container {
+  width: 100%;
+  justify-content: center;
   display: flex;
-  opacity: 1;
-  position: absolute;
-  right: 6.5%;
 }
 
-.tech {
-  margin: 0 0.2rem;
-  padding: 0.1rem 0.5rem;
-  color: var(--hero-name);
-  border: 1px solid var(--hero-name);
-  background-color: none;
-  line-height: 20px;
-  font-weight: 500;
-  border-radius: 20px;
+.carousel {
+  position: relative;
+  padding: 0 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 1140px) {
-  .image {
-    max-width: 150px;
-    height: auto;
+.section img {
+  position: relative;
+  width: 700px;
+  z-index: 100;
+}
+
+.portfolio {
+  :global .slick-list {
+    width: 700px;
+    position: relative;
   }
 
-  .chasespace_image {
-    max-width: 150px;
+  :global .slick-slider {
+    position: relative;
+    height: min-content;
+  }
+
+  :global .slick-slide {
+    justify-content: center;
+    position: relative;
+    display: flex !important;
   }
 }
 
-@media (max-width: 950px) {
-  .section a > p {
-    margin-right: 0;
-    font-size: 14px;
+@media screen and (max-width: 1440px) {
+  .section p {
+    font-size: 22px;
+    width: max-content;
+  }
+
+  .section a {
+    font-size: 22px;
+  }
+
+  .section img {
+    width: 500px;
+    max-width: 100%; /* Ensure images are responsive */
+  }
+
+  .portfolio {
+    :global .slick-list {
+      width: 500px;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  .carousel {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .section li {
+    flex-direction: column;
   }
 
   .section h3 {
-    font-size: 28px;
+    line-height: 20px;
+  }
+
+  .section p {
+    margin: 1rem 0;
+  }
+
+  .right_container img {
+    margin: 2rem 0;
   }
 }
 
-@media (max-width: 750px) {
-  .section span {
-    font-size: 10px;
+@media screen and (max-width: 650px) {
+  .section img {
+    width: 500px;
+    max-width: 100%;
   }
 
   .section h3 {
-    font-size: 24px;
+    font-size: 26px;
+  }
+
+  .section p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .section a {
+    font-size: 20px;
+  }
+
+  .portfolio {
+    :global .slick-list {
+      width: 400px;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  .section li {
+    padding: 1rem 0rem;
   }
 }
 
-@media (max-width: 570px) {
-  .image {
-    max-width: 100px;
-    border-radius: 2px;
-    height: auto;
+@media screen and (max-width: 450px) {
+  .portfolio {
+    :global .slick-list {
+      width: 340px;
+      max-width: 100%;
+      position: relative;
+    }
   }
-
-  .chasespace_image {
-    max-width: 100px;
-  }
-
-  .section a > p {
-    display: none;
-  }
-}
-
-@media (max-width: 500px) {
 }

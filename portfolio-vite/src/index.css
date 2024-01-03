@@ -9,12 +9,17 @@
   font-style: normal;
 }
 
-/* Redaction 50 Regular */
 @font-face {
-  font-family: "Redaction 50";
-  src: url("./Redaction50-Regular.ttf") format("truetype");
+  font-family: "Outfit";
+  src: url("./Outfit-Bold.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  font-display: auto;
+}
+@font-face {
+  font-family: "Zilla";
+  src: url("./ZillaSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -24,20 +29,13 @@
   font-style: bold;
 }
 
-@font-face {
-  font-family: "DMSans-Regular";
-  src: url("./DMSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root,
 html[data-theme="light"] {
   --hero-name: #141414;
-  /* --page-bg: #fffbeb; */
-  --page-bg: #ffffff;
+  /* --page-bg: #ffffff; */
+  --page-bg: #fffce1;
   --nav-numbers: #f42144;
-  --section-bg: white;
+  --section-bg: black;
   --contact-text: #141414;
   --about-text: black;
   --about-title: #45193b;
@@ -55,17 +53,18 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --hero-name: #aeaeae;
-  --page-bg: #171717;
+  --hero-name: #fffce1;
+  --border-colour: #42433e;
+  --page-bg: #0e100f;
   --nav-numbers: #818cf8;
-  --section-bg: #121212;
+  --section-bg: white;
   --contact-text: rgb(213, 213, 213);
   --about-text: #f7f7f7;
   --about-title: #f7f7f7f0;
   --port-text: rgb(213, 213, 213);
   --hero-intro: #818cf8;
   --line: solid #c7d2fe;
-  --image-filter: grayscale(90%);
+  --image-filter: grayscale(60%);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;

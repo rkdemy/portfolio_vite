@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./styling/Hero.module.css";
-import paint2 from "../assets/hero_section/paint.jpg";
-import paintblur from "../assets/hero_section/paintblur.png";
-import paint1 from "../assets/hero_section/paint2Compressed.jpg";
+import bg from "../assets/pill.png";
 import Switch from "./Switch";
 import { TbArrowMoveRight } from "react-icons/tb";
 const Hero = () => {
   return (
     <>
+      <div className={styles.noise} />
       <div className={styles.hero_container}>
         <div className={styles.hero_container__content}>
           <div className={styles.hero_name}>
@@ -19,20 +18,12 @@ const Hero = () => {
             <div className={styles.hero_3}>
               <h1>END</h1>
               <div className={styles.image_container}>
-                <img
-                  src={paint2}
-                  placeholder="blur"
-                  alt="An abstract painting"
-                />
+                <img src={bg} placeholder="blur" alt="An abstract painting" />
               </div>
             </div>
             <div className={styles.hero_4}>
               <div>
-                <img
-                  src={paint1}
-                  placeholder="blur"
-                  alt="An abstract painting"
-                />
+                <img src={bg} placeholder="blur" alt="An abstract painting" />
               </div>
               <h1>DEVELOPER</h1>
             </div>

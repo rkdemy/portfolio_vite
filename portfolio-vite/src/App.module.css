@@ -5,16 +5,16 @@
   text-align: center;
 }
 
-.noise::before {
-  position: fixed;
+.noise {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  content: "";
-  opacity: 0.03;
-  pointer-events: none;
-  background: url("./assets/noise.gif");
+  opacity: 0.4;
+  background-image: url("./assets/vector.png");
 }
 
 .portfolio {

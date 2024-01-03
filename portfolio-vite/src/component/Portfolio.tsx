@@ -1,9 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styling/Portfolio.module.css";
-import DisneyScreenShot from "../assets/portfolio_images/disney.png";
-import NotIkeaScreenshot from "../assets/portfolio_images/notikea2.png";
-import ChaseSpaceScreenshot from "../assets/portfolio_images/chasespace.png";
-import ChaseSpaceScreenshot2 from "../assets/portfolio_images/chasespace1.png";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
+//ChaseSpace
+import ChaseSpaceScreenshot from "../assets/portfolio_images/chasespace1.svg";
+
+//Disney
+import DisneyLogin from "../assets/portfolio_images/Disney/login.svg";
+import DisneyHome from "../assets/portfolio_images/Disney/home.svg";
+import DisneySearch from "../assets/portfolio_images/Disney/search.svg";
+import DisneyShow from "../assets/portfolio_images/Disney/show.svg";
+
+//Ikea
+import IkeaProduct from "../assets/portfolio_images/Ikea/product_page.svg";
+import IkeaCart from "../assets/portfolio_images/Ikea/cart.svg";
+import IkeaItem from "../assets/portfolio_images/Ikea/item.svg";
+import IkeaHome from "../assets/portfolio_images/Ikea/home_page.svg";
+
+//Bg
+import bg from "../assets/portfolio_images/bg1.png";
+
+import ProjectSlider from "./ProjectSlider.jsx";
+
+const chasespaceTech = [
+  "React-Native",
+  "Expo Go",
+  "JavaScript (Node.js/Express)",
+  "Firebase",
+  "PostgreSQL",
+  "Escrow API",
+  "Google Locations API",
+];
+
+const ikeaTech = [
+  "React",
+  "JavaScript (Node.js/Express)",
+  "Styled-Components",
+  "Auth-0",
+  "Stripe",
+];
+
+const disneyTech = [
+  "React",
+  "JavaScript (Node.js/Express)",
+  "PostgreSQL",
+  "TMDB API",
+];
+
+const notikeadescription =
+  "An ecommerce shop made loosely following a tutorial project from a Udemy course by John Smilga completed during my early days of learning React. It served as a crucial milestone before moving onto personal projects.";
+
+const disneydescription =
+  "After the ecommerce website I wanted to challenge myself by recreating Disney without looking at tutorials on Youtube or Github. My main goal was to gain more styling experience as I previously focused on logic code (APIs, State Management, Event handlers, etc). I found styling to be an enjoyable yet difficult challenge especially when it came to responsive design. It was also my first time using PostgreSQL or any rdbms. Prior to this I had used firebase.";
+
+const ikeaImage = [
+  { image: IkeaHome },
+  { image: IkeaProduct },
+  { image: IkeaItem },
+  { image: IkeaCart },
+];
+
+const disneyImage = [
+  { image: DisneyLogin },
+  { image: DisneyHome },
+  { image: DisneySearch },
+  { image: DisneyShow },
+];
 
 const Portfolio = () => {
   return (
@@ -19,61 +85,36 @@ const Portfolio = () => {
 
         <ul>
           <li className={styles.first_project}>
-            <a href="/chasespace">
-              <div className={styles.project_container}>
-                <h3>
-                  ChaseSpace <span>2023</span>
-                </h3>
-                <img
-                  src={ChaseSpaceScreenshot}
-                  alt=""
-                  className={styles.chasespace_image}
-                />
+            <div className={styles.left_container}>
+              <h3>ChaseSpace</h3>
+              <p>
+                A peer-to-peer marketplace to facilitate global personal
+                shopping by connecting Buyers with Travelers, akin to Grabr,
+                Airtasker and Fiverr.
+              </p>
+              <div className={styles.button_site}>
+                <button>
+                  <a href="/chasespace">Learn more...</a>
+                </button>
               </div>
-
-              <div className={styles.tech_container}>
-                <h5 className={styles.tech}>React-Native</h5>
-                <h5 className={styles.tech}>Node.js/Express</h5>
-                <h5 className={styles.tech}>Firebase</h5>
-                <h5 className={styles.tech}>PostgreSQL</h5>
-                <h5 className={styles.tech}>Escrow API</h5>
-                <h5 className={styles.tech}>Google Locations API</h5>
-              </div>
-              <p>View Project</p>
-            </a>
+            </div>
+            <div className={styles.right_container}>
+              <img src={ChaseSpaceScreenshot} alt="" />
+            </div>
           </li>
           <li className={styles.second_project}>
-            <a href="/notikea">
-              <div className={styles.project_container}>
-                <h3>
-                  NOT IKEA <span>2023</span>
-                </h3>
-                <img src={NotIkeaScreenshot} alt="" className={styles.image} />
-              </div>
-              <div className={styles.tech_container}>
-                <h5 className={styles.tech}>React</h5>
-                <h5 className={styles.tech}>Styled-Components</h5>
-                <h5 className={styles.tech}>Auth-0</h5>
-                <h5 className={styles.tech}>Stripe</h5>
-              </div>
-              <p>View Project</p>
-            </a>
+            <ProjectSlider
+              title="Not Ikea"
+              description={notikeadescription}
+              image={ikeaImage}
+            />
           </li>
           <li className={styles.last_project}>
-            <a href="">
-              <div className={styles.project_container}>
-                <img src={DisneyScreenShot} alt="" className={styles.image} />
-                <h3>
-                  Disney Clone <span>2023</span>
-                </h3>
-              </div>
-              <div className={styles.tech_container}>
-                <h5 className={styles.tech}>React</h5>
-                <h5 className={styles.tech}>PostgreSQL</h5>
-                <h5 className={styles.tech}>TMDB API</h5>
-              </div>
-              <p>View Project</p>
-            </a>
+            <ProjectSlider
+              title="Disney Clone"
+              description={disneydescription}
+              image={disneyImage}
+            />
           </li>
         </ul>
       </section>
