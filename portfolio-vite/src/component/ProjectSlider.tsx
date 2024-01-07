@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./styling/Portfolio.module.css";
 
 import Slider from "react-slick";
@@ -44,6 +44,7 @@ const ProjectSlider = ({ title, description, tech, image }) => {
       </div>
       <div className={styles.right_container}>
         <div className={styles.carousel}>
+          {/*@ts-ignore*/}
           <Slider ref={setSliderRef} {...settings}>
             {image.map((x, index) => (
               <img src={x.image} key={index} />

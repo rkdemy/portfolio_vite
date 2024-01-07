@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./styling/Hero.module.css";
 import bg from "../assets/pill.png";
 import Switch from "./Switch";

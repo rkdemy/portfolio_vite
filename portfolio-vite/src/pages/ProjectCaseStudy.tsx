@@ -9,68 +9,7 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import { BsArrowDownCircle } from "react-icons/bs";
 
-interface Tab {
-  image: string;
-  name: string;
-  video: string;
-}
-
-interface ContentItem {
-  text: string;
-  animate: boolean;
-}
-
-interface ProjectDetail {
-  title: string;
-  content: { icon?: ReactElement; text: string }[];
-}
-
-interface GoalAndSolution {
-  text: string;
-}
-
-interface Achievement {
-  image: string;
-  title: string;
-  description: string;
-}
-
-interface Challenge {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-interface LessonLearned {
-  title: string;
-  content: ContentItem[];
-}
-
-interface AreaOfImprovement {
-  title: string;
-  content: string;
-}
-
-interface ConclusionOverall {
-  title: string;
-  content: string;
-}
-
-interface ProjectCaseStudyProps {
-  header: string;
-  headerSubtitle: string;
-  tabNames: Tab[];
-  projectOverview: ContentItem[];
-  projectDetails: ProjectDetail[];
-  goalAndSolution: GoalAndSolution[];
-  achievements: Achievement[];
-  challenges: Challenge[];
-  conclusionOverall: ConclusionOverall;
-  lessonsLearnt: LessonLearned[];
-  areasOfImprovement: AreaOfImprovement[];
-}
-
-const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
+const ProjectCaseStudy = ({
   header,
   headerSubtitle,
   tabNames,
@@ -140,6 +79,7 @@ const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
                       <IoIosArrowBack />
                     </button>
 
+                    {/*@ts-ignore*/}
                     <Slider ref={setSliderRef} {...settings}>
                       {tabNames?.map((x, index) => (
                         <li

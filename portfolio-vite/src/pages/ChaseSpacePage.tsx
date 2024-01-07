@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCaseStudy from "./ProjectCaseStudy";
 
 import EscrowIcon from "../assets/chasespace_page/icons/feedback.png";

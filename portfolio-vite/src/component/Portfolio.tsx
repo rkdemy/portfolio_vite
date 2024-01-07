@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "./styling/Portfolio.module.css";
 
 import "slick-carousel/slick/slick.css";

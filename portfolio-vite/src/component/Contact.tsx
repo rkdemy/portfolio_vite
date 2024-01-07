@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./styling/Contact.module.css";
 import ParallaxText from "./ParallaxText.tsx";
 const Contact = () => {

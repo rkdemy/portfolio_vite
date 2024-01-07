@@ -11,12 +11,7 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
-interface ParallaxProps {
-  children: string;
-  baseVelocity: number;
-}
-
-function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
+function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);

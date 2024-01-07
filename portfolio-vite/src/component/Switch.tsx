@@ -3,6 +3,7 @@ import styles from "./styling/Switch.module.css";
 import { useThemeContext } from "../context/theme_context";
 
 const Switch = () => {
+  //@ts-ignore
   const { toggleTheme } = useThemeContext();
 
   //Find mouse location
