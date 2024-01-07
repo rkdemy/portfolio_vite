@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../../public/Outfit-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla";
+  src: url("../../../public/ZillaSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   position: relative;
   justify-content: center;

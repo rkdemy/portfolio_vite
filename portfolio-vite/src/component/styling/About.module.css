@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Zilla";
+  src: url("../../../public/ZillaSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../../../public/Outfit-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .about {
   width: 90%;
   display: flex;

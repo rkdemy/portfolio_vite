@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Zilla";
+  src: url("../../../public/ZillaSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OTFGlusp";
+  src: url("../../../public/OTFGlusp.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hero_container {
   width: 100%;
   display: flex;
