@@ -6,6 +6,7 @@
 
 .container_restrict {
   margin: 0rem auto;
+  z-index: 100;
   max-width: 1200px;
 }
 
@@ -118,12 +119,13 @@
   justify-content: center;
   grid-column: 2;
   grid-row: 1 / span 3;
+
+  z-index: 2;
 }
 
 .header_image_container img {
   width: 200px;
   height: fit-content;
-  z-index: 100;
   border-radius: 30px;
 }
 
@@ -546,6 +548,12 @@
   .tabsContainer,
   .header_image_container {
     grid-column: 1;
+    z-index: 100;
+    position: relative;
+  }
+
+  .tabsContainer {
+    z-index: 2;
   }
 
   .header_image_container {
@@ -557,6 +565,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 100;
     align-items: center;
   }
 
