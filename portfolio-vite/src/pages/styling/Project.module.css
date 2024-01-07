@@ -1,36 +1,37 @@
 .container {
   position: relative;
   justify-content: center;
+  background-color: #0e100f;
 }
 
 .container_restrict {
-  margin: 2rem auto;
+  margin: 0rem auto;
   max-width: 1200px;
 }
 
 .project_overview h2 {
-  border-bottom: 2px solid var(--hero-name);
+  border-bottom: 2px solid #fffce1;
   padding-bottom: 3rem;
   margin-bottom: 4rem;
 }
 
 .container_restrict h2 {
   font-size: 60px;
-  color: var(--hero-name);
+  color: #fffce1;
   font-family: "Outfit";
 }
 
 .project_overview h3 {
-  color: var(--hero-name);
+  color: #fffce1;
   font-family: "Outfit";
   font-size: 19px;
   width: fit-content;
-  border-bottom: 1px solid var(--hero-name);
+  border-bottom: 1px solid #fffce1;
   margin-bottom: 5px;
 }
 
 .project_details p {
-  color: var(--hero-name);
+  color: #fffce1;
   font-family: "Zilla";
   font-size: 19px;
 }
@@ -40,7 +41,7 @@
 }
 
 .overview {
-  color: var(--hero-name);
+  color: #fffce1;
   font-size: 26px;
   font-family: "Zilla";
 }
@@ -58,7 +59,7 @@
   font-family: "Outfit";
   width: fit-content;
   font-size: 70px;
-  color: var(--hero-name);
+  color: #fffce1;
   margin-bottom: 15px;
 }
 
@@ -74,9 +75,9 @@
   margin-bottom: 20px;
   padding-bottom: 15px;
   font-family: "Zilla";
-  border-bottom: 2px solid var(--border-colour);
+  border-bottom: 2px solid #42433e;
   font-size: 19px;
-  color: var(--hero-name);
+  color: #fffce1;
   grid-column: 1;
 }
 
@@ -86,7 +87,7 @@
 }
 
 .header li {
-  color: var(--hero-name);
+  color: #fffce1;
   width: max-content;
   cursor: pointer;
   font-size: 19px;
@@ -101,9 +102,9 @@
 }
 
 .header li.selected {
-  background-color: var(--page-bg);
-  border: 2px solid var(--hero-name);
-  color: var(--hero-name) !important;
+  background-color: #0e100f;
+  border: 2px solid #fffce1;
+  color: #fffce1 !important;
 }
 
 .header li:hover {
@@ -129,7 +130,7 @@
 .project_overview {
   position: relative;
   margin: 7rem auto;
-  background-color: var(--border-colour);
+  background-color: #42433e;
   width: 100%;
   max-width: 1200px;
   z-index: 100;
@@ -188,7 +189,7 @@
 }
 
 .square_container_content p {
-  color: var(--hero-name);
+  color: #fffce1;
   font-family: "Zilla";
   font-size: 19px;
 }
@@ -207,8 +208,8 @@
   z-index: 100;
   border-radius: 30px;
   align-items: center;
-  background-color: var(--border-colour);
-  color: var(--hero-name);
+  background-color: #42433e;
+  color: #fffce1;
   padding: 3rem 4rem;
   margin-bottom: 4rem;
   z-index: 100;
@@ -229,7 +230,7 @@
 
 .achievements_tab {
   display: block;
-  color: var(--hero-name);
+  color: #fffce1;
   padding: 1.5rem 0 1.5rem 0;
   width: fit-content;
   cursor: pointer;
@@ -242,7 +243,7 @@
 .left_content span {
   justify-content: space-between;
   align-items: center;
-  color: var(--hero-name);
+  color: #fffce1;
   display: flex;
 }
 
@@ -250,7 +251,7 @@
   font-family: "Zilla";
   font-size: 19px;
   max-width: 350px;
-  color: var(--hero-name);
+  color: #fffce1;
 }
 
 .video_crop {
@@ -295,7 +296,7 @@
 .container_restrict h4 {
   font-size: 25px;
   font-family: "Outfit";
-  color: var(--hero-name);
+  color: #fffce1;
 }
 
 .challenge_container {
@@ -315,11 +316,11 @@
 }
 
 .challenge_container__square span {
-  color: var(--hero-name);
+  color: #fffce1;
 }
 
 .challenge_container__square p {
-  color: var(--hero-name);
+  color: #fffce1;
   font-family: "Zilla";
   font-size: 19px;
 }
@@ -328,7 +329,7 @@
   display: flex;
   padding: 6rem 9rem;
   justify-content: center;
-  border: 2px solid var(--hero-name);
+  border: 2px solid #fffce1;
 }
 
 .conclusion_header h2 {
@@ -349,7 +350,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   width: 100%;
-  background-color: var(--border-colour);
+  background-color: #42433e;
 }
 
 .carousel_contents_container {
@@ -359,7 +360,7 @@
   justify-content: center;
   padding: 6rem 4rem;
   flex-direction: column;
-  border: 2px solid var(--hero-name);
+  border: 2px solid #fffce1;
 }
 
 .noise_title {
@@ -373,7 +374,7 @@
 .carousel_title {
   font-size: 50px;
   font-family: "Outfit";
-  color: var(--hero-name);
+  color: #fffce1;
   z-index: 100;
   opacity: 1;
   position: relative;
@@ -398,7 +399,7 @@
 }
 
 .conclusion_container {
-  color: var(--hero-name);
+  color: #fffce1;
   position: relative;
   z-index: 100;
 }

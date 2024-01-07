@@ -298,7 +298,7 @@ const ProjectCaseStudy = ({
               This professional experience was my first experience into client
               services, involving tasks such as expectation management, regular
               communication via emails and Zoom meetings, and collaboration
-              within a team. The collaborative nature of working together,
+              within a team. The collaborative nature of
               discussing code, brainstorming ideas, and overcoming challenges as
               a group stood out as a significant reason for my enjoyment and
               reaffirmed my passion for the industry.
