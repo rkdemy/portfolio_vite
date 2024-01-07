@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./styling/Switch.module.css";
 import { useThemeContext } from "../context/theme_context";
 

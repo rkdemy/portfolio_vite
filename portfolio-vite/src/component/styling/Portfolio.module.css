@@ -33,6 +33,22 @@
   margin: 0 1rem 0 0;
 }
 
+.techSpan {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  max-width: 550px;
+}
+
+.tech_container {
+  border: 1px solid var(--hero-name) !important;
+  padding: 0.2rem 0.6rem !important;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: "Zilla";
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
 .button_site a {
   color: var(--hero-name);
   text-decoration: none;
@@ -68,7 +84,7 @@ a {
   max-width: 550px;
   font-size: 24px;
   font-family: "Zilla";
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .last_project {

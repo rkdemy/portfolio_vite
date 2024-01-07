@@ -10,12 +10,10 @@ import AccountIcon from "../assets/chasespace_page/icons/information.png";
 import EscrowOverviewIcon from "../assets/chasespace_page/icons/escrow.png";
 import { SiExpo, SiPostgresql } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { TbBrandFirebase, TbH3 } from "react-icons/tb";
+import { TbBrandFirebase } from "react-icons/tb";
 import { AiOutlineGoogle } from "react-icons/ai";
-import { BsArrowDownCircle } from "react-icons/bs";
 
 import UserReviewVideo from "../assets/chasespace_page/UserReview.mp4";
-
 import AuthVideo from "../assets/chasespace_page/Authentication.mp4";
 import EscrowVideo from "../assets/chasespace_page/Escrow.mp4";
 import messageVideo from "../assets/chasespace_page/message s10.mp4";

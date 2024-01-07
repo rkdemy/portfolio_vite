@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import styles from "./styling/Portfolio.module.css";
 
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 //ChaseSpace
 import ChaseSpaceScreenshot from "../assets/portfolio_images/chasespace1.svg";
@@ -20,9 +18,6 @@ import IkeaProduct from "../assets/portfolio_images/Ikea/product_page.svg";
 import IkeaCart from "../assets/portfolio_images/Ikea/cart.svg";
 import IkeaItem from "../assets/portfolio_images/Ikea/item.svg";
 import IkeaHome from "../assets/portfolio_images/Ikea/home_page.svg";
-
-//Bg
-import bg from "../assets/portfolio_images/bg1.png";
 
 import ProjectSlider from "./ProjectSlider.jsx";
 
@@ -92,6 +87,11 @@ const Portfolio = () => {
                 shopping by connecting Buyers with Travelers, akin to Grabr,
                 Airtasker and Fiverr.
               </p>
+              <ul className={styles.techSpan}>
+                {chasespaceTech.map((item) => (
+                  <li className={styles.tech_container}>{item}</li>
+                ))}
+              </ul>
               <div className={styles.button_site}>
                 <button>
                   <a href="/chasespace">Learn more...</a>
@@ -106,6 +106,7 @@ const Portfolio = () => {
             <ProjectSlider
               title="Not Ikea"
               description={notikeadescription}
+              tech={ikeaTech}
               image={ikeaImage}
             />
           </li>
@@ -113,6 +114,7 @@ const Portfolio = () => {
             <ProjectSlider
               title="Disney Clone"
               description={disneydescription}
+              tech={disneyTech}
               image={disneyImage}
             />
           </li>

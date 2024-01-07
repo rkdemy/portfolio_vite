@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styling/Project.module.css";
 import AnimateText from "../component/AnimateText";
 import HighlightText from "../component/HighlightText";
-import image from "../assets/portfolio_images/bg1.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +9,68 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import { BsArrowDownCircle } from "react-icons/bs";
 
-const ProjectCaseStudy = ({
+interface Tab {
+  image: string;
+  name: string;
+  video: string;
+}
+
+interface ContentItem {
+  text: string;
+  animate: boolean;
+}
+
+interface ProjectDetail {
+  title: string;
+  content: { icon?: ReactElement; text: string }[];
+}
+
+interface GoalAndSolution {
+  text: string;
+}
+
+interface Achievement {
+  image: string;
+  title: string;
+  description: string;
+}
+
+interface Challenge {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface LessonLearned {
+  title: string;
+  content: ContentItem[];
+}
+
+interface AreaOfImprovement {
+  title: string;
+  content: string;
+}
+
+interface ConclusionOverall {
+  title: string;
+  content: string;
+}
+
+interface ProjectCaseStudyProps {
+  header: string;
+  headerSubtitle: string;
+  tabNames: Tab[];
+  projectOverview: ContentItem[];
+  projectDetails: ProjectDetail[];
+  goalAndSolution: GoalAndSolution[];
+  achievements: Achievement[];
+  challenges: Challenge[];
+  conclusionOverall: ConclusionOverall;
+  lessonsLearnt: LessonLearned[];
+  areasOfImprovement: AreaOfImprovement[];
+}
+
+const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
   header,
   headerSubtitle,
   tabNames,

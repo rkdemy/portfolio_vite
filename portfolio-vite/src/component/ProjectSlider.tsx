@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ProjectSlider = ({ title, description, image }) => {
+const ProjectSlider = ({ title, description, tech, image }) => {
   const [sliderRef, setSliderRef] = useState(null);
 
   var settings = {
@@ -26,6 +26,13 @@ const ProjectSlider = ({ title, description, image }) => {
       <div className={styles.left_container}>
         <h3>{title}</h3>
         <p>{description}</p>
+        <ul className={styles.techSpan}>
+          {tech?.map((item: string, index) => (
+            <li className={styles.tech_container} key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
         <div className={styles.button_site}>
           <button>
             <a href="www.google.com">Github</a>
