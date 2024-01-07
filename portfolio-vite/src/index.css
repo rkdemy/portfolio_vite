@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: "OTFGlusp";
-  src: url("./OTFGlusp.ttf") format("truetype");
+  src: url("../public/OTFGlusp.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url("./Outfit-Bold.ttf") format("truetype");
+  src: url("../public/Outfit-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Zilla";
-  src: url("./ZillaSlab-Regular.ttf") format("truetype");
+  src: url("../public/ZillaSlab-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MigraBold";
-  src: url("./Migra-Extrabold.otf") format("truetype");
+  src: url("../public/Migra-Extrabold.otf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
